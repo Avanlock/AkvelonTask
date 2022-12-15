@@ -9,5 +9,8 @@ namespace AkvelonTestTask.Repositories
     {
         Task<IEnumerable<Project>> GetAllProjectsAsync();
         Task<Project> GetProjectByIdAsync(Guid id);
+        Task<Project> AddProjectAsync(Project project);
+        Task<Project> DeleteProjectAsync(Guid id);
+        Task<Project> UpdateProjectAsync(Guid id, Project project);
     }
 }
